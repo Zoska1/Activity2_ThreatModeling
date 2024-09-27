@@ -1234,8 +1234,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "0c378fc7-e146-45d0-be6c-3c873867852b",
             "zIndex": 1,
+            "id": "0c378fc7-e146-45d0-be6c-3c873867852b",
             "data": {
               "type": "tm.Actor",
               "name": "Candidate Browser",
@@ -1268,8 +1268,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "0973aed9-410f-456c-af13-922dd0124393",
             "zIndex": 2,
+            "id": "0973aed9-410f-456c-af13-922dd0124393",
             "data": {
               "type": "tm.Process",
               "name": "Node.js Server",
@@ -1308,8 +1308,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "e3b806a4-10f4-4073-969e-422b6c36bf6d",
             "zIndex": 3,
+            "id": "e3b806a4-10f4-4073-969e-422b6c36bf6d",
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1357,15 +1357,15 @@
               "threats": []
             },
             "id": "9e0174d8-6053-4d39-ae56-1a0d599326ba",
+            "labels": [
+              "Authentication Response"
+            ],
             "source": {
               "cell": "e3b806a4-10f4-4073-969e-422b6c36bf6d"
             },
             "target": {
               "cell": "0973aed9-410f-456c-af13-922dd0124393"
             },
-            "labels": [
-              "Authentication Response"
-            ],
             "vertices": [
               {
                 "x": 650,
@@ -1405,15 +1405,15 @@
               "threats": []
             },
             "id": "2f8c4566-d01a-46e6-8328-99437f879489",
+            "labels": [
+              "Sends credentials"
+            ],
             "source": {
               "cell": "0c378fc7-e146-45d0-be6c-3c873867852b"
             },
             "target": {
               "cell": "0973aed9-410f-456c-af13-922dd0124393"
             },
-            "labels": [
-              "Sends credentials"
-            ],
             "vertices": [
               {
                 "x": 360,
@@ -1453,15 +1453,15 @@
               "threats": []
             },
             "id": "49afc868-27ec-4ba5-9b7d-f7d9c95ccdbc",
+            "labels": [
+              "Credentials verification"
+            ],
             "source": {
               "cell": "0973aed9-410f-456c-af13-922dd0124393"
             },
             "target": {
               "cell": "e3b806a4-10f4-4073-969e-422b6c36bf6d"
             },
-            "labels": [
-              "Credentials verification"
-            ],
             "vertices": [
               {
                 "x": 660,
@@ -1501,6 +1501,9 @@
               "threats": []
             },
             "id": "4f48f5c3-70ab-4576-b7a8-d10178ea77ec",
+            "labels": [
+              "Store candidate information\n"
+            ],
             "source": {
               "cell": "0973aed9-410f-456c-af13-922dd0124393"
             },
@@ -1512,84 +1515,64 @@
                 "x": 660,
                 "y": 360
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
             },
-            "labels": [
-              "Store candidate information\n"
+            "id": "89ec3628-23b8-45b9-b9b6-ff744fd3add2",
+            "source": {
+              "x": 250,
+              "y": 70
+            },
+            "target": {
+              "x": 280,
+              "y": 520
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "a06c5159-4af4-4132-afb6-369eb39a85d8",
+            "source": {
+              "x": 700,
+              "y": 70
+            },
+            "target": {
+              "x": 680,
+              "y": 550
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 330
+              }
             ]
           }
         ]
