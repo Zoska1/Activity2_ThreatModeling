@@ -305,18 +305,18 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
-            "id": "2702dcaa-d458-4841-8704-c7cdccc0eb0e",
+            "id": "d6ec00cf-f326-4644-bb45-39229ed4f989",
             "source": {
-              "x": 1210,
-              "y": 660
+              "x": 1930,
+              "y": 690
             },
             "target": {
-              "x": 1230,
-              "y": 1070
+              "x": 1940,
+              "y": 1030
             },
             "vertices": [
               {
-                "x": 1300,
+                "x": 1890,
                 "y": 860
               }
             ]
@@ -334,18 +334,18 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
-            "id": "d6ec00cf-f326-4644-bb45-39229ed4f989",
+            "id": "2702dcaa-d458-4841-8704-c7cdccc0eb0e",
             "source": {
-              "x": 1930,
-              "y": 690
+              "x": 1210,
+              "y": 660
             },
             "target": {
-              "x": 1940,
-              "y": 1030
+              "x": 1230,
+              "y": 1070
             },
             "vertices": [
               {
-                "x": 1890,
+                "x": 1300,
                 "y": 860
               }
             ]
