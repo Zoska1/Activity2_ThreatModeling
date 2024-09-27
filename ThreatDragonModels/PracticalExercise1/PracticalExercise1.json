@@ -418,7 +418,7 @@
       },
       {
         "id": 5,
-        "title": "Voting",
+        "title": "Vote Casting",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
