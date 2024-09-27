@@ -16,7 +16,378 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 1140,
+              "y": 830
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Voter Browser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "id": "64c6a61c-e76b-41e9-b59f-6ecefea79c1e",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Voter Browser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1980,
+              "y": 830
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "MongoDB"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "5db12eac-3929-405a-94bc-f21071e79628",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Store",
+              "name": "MongoDB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query to check credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d207aac2-4795-424b-a470-43e6ab627d0d",
+            "source": {
+              "cell": "5228904a-1662-4fcb-883f-7836f7331c5d"
+            },
+            "target": {
+              "cell": "5db12eac-3929-405a-94bc-f21071e79628"
+            },
+            "labels": [
+              "Query to check credentials"
+            ],
+            "vertices": [
+              {
+                "x": 1790,
+                "y": 840
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authentication response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d03c0eca-3b23-423e-97d3-97962b7b0c5a",
+            "source": {
+              "cell": "5db12eac-3929-405a-94bc-f21071e79628"
+            },
+            "target": {
+              "cell": "5228904a-1662-4fcb-883f-7836f7331c5d"
+            },
+            "vertices": [
+              {
+                "x": 1800,
+                "y": 880
+              }
+            ],
+            "labels": [
+              "Authentication response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "MongoDB response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d23296ac-07d3-44ba-bb6a-6657a6a4be39",
+            "labels": [
+              "MongoDB response"
+            ],
+            "source": {
+              "cell": "5228904a-1662-4fcb-883f-7836f7331c5d"
+            },
+            "target": {
+              "cell": "64c6a61c-e76b-41e9-b59f-6ecefea79c1e"
+            },
+            "vertices": [
+              {
+                "x": 1400,
+                "y": 880
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User sends credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "2ff98574-2616-4cf6-a735-223cf5d2eb9a",
+            "labels": [
+              "User sends credentials"
+            ],
+            "source": {
+              "cell": "64c6a61c-e76b-41e9-b59f-6ecefea79c1e"
+            },
+            "target": {
+              "cell": "5228904a-1662-4fcb-883f-7836f7331c5d"
+            },
+            "vertices": [
+              {
+                "x": 1270,
+                "y": 860
+              },
+              {
+                "x": 1390,
+                "y": 830
+              },
+              {
+                "x": 1410,
+                "y": 830
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "2702dcaa-d458-4841-8704-c7cdccc0eb0e",
+            "source": {
+              "x": 1210,
+              "y": 660
+            },
+            "target": {
+              "x": 1230,
+              "y": 1070
+            },
+            "vertices": [
+              {
+                "x": 1300,
+                "y": 860
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "d6ec00cf-f326-4644-bb45-39229ed4f989",
+            "source": {
+              "x": 1930,
+              "y": 690
+            },
+            "target": {
+              "x": 1940,
+              "y": 1030
+            },
+            "vertices": [
+              {
+                "x": 1890,
+                "y": 860
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 1510,
+              "y": 810
+            },
+            "size": {
+              "width": 120,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Node.js Server"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "5228904a-1662-4fcb-883f-7836f7331c5d",
+            "data": {
+              "type": "tm.Process",
+              "name": "Node.js Server",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 11
+          }
+        ]
       },
       {
         "id": 2,
