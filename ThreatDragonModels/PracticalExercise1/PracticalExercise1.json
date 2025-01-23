@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0",
+  "version": "2.3.0",
   "summary": {
     "title": "PracticalExercise1",
     "owner": "Avian Lance Basco",
@@ -15,7 +15,7 @@
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.2.0",
+        "version": "2.3.0",
         "cells": [
           {
             "position": {
@@ -39,6 +39,88 @@
             "visible": true,
             "shape": "actor",
             "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "63d460ae-3629-4e57-b941-bed639eb61a7"
+                },
+                {
+                  "group": "right",
+                  "id": "4bb474b5-5e18-48c4-91f6-5b16bb7e9856"
+                },
+                {
+                  "group": "bottom",
+                  "id": "65289089-a055-47bb-8429-4c67fb55631f"
+                },
+                {
+                  "group": "left",
+                  "id": "7d96ff2c-ae3b-463a-8b82-4ec317944b0e"
+                }
+              ]
+            },
             "id": "64c6a61c-e76b-41e9-b59f-6ecefea79c1e",
             "data": {
               "type": "tm.Actor",
@@ -75,8 +157,90 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "5db12eac-3929-405a-94bc-f21071e79628",
             "zIndex": 3,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "3ca405d1-9112-4ac8-a385-49cde33332a1"
+                },
+                {
+                  "group": "right",
+                  "id": "2f7cb371-80ce-4835-aae4-281e9661c3d3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ff53ba95-c610-473b-99f5-372f63904481"
+                },
+                {
+                  "group": "left",
+                  "id": "422a97b0-a098-4d84-91dd-e0545525b6e9"
+                }
+              ]
+            },
+            "id": "5db12eac-3929-405a-94bc-f21071e79628",
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -123,6 +287,9 @@
               "protocol": "",
               "threats": []
             },
+            "labels": [
+              "Query to check credentials"
+            ],
             "id": "d207aac2-4795-424b-a470-43e6ab627d0d",
             "source": {
               "cell": "5228904a-1662-4fcb-883f-7836f7331c5d"
@@ -130,9 +297,6 @@
             "target": {
               "cell": "5db12eac-3929-405a-94bc-f21071e79628"
             },
-            "labels": [
-              "Query to check credentials"
-            ],
             "vertices": [
               {
                 "x": 1790,
@@ -171,6 +335,9 @@
               "protocol": "",
               "threats": []
             },
+            "labels": [
+              "Authentication response"
+            ],
             "id": "d03c0eca-3b23-423e-97d3-97962b7b0c5a",
             "source": {
               "cell": "5db12eac-3929-405a-94bc-f21071e79628"
@@ -183,9 +350,6 @@
                 "x": 1800,
                 "y": 880
               }
-            ],
-            "labels": [
-              "Authentication response"
             ]
           },
           {
@@ -219,10 +383,10 @@
               "protocol": "",
               "threats": []
             },
-            "id": "d23296ac-07d3-44ba-bb6a-6657a6a4be39",
             "labels": [
               "MongoDB response"
             ],
+            "id": "d23296ac-07d3-44ba-bb6a-6657a6a4be39",
             "source": {
               "cell": "5228904a-1662-4fcb-883f-7836f7331c5d"
             },
@@ -231,7 +395,7 @@
             },
             "vertices": [
               {
-                "x": 1400,
+                "x": 1380,
                 "y": 880
               }
             ]
@@ -267,10 +431,10 @@
               "protocol": "",
               "threats": []
             },
-            "id": "2ff98574-2616-4cf6-a735-223cf5d2eb9a",
             "labels": [
               "User sends credentials"
             ],
+            "id": "2ff98574-2616-4cf6-a735-223cf5d2eb9a",
             "source": {
               "cell": "64c6a61c-e76b-41e9-b59f-6ecefea79c1e"
             },
@@ -279,15 +443,7 @@
             },
             "vertices": [
               {
-                "x": 1270,
-                "y": 860
-              },
-              {
-                "x": 1390,
-                "y": 830
-              },
-              {
-                "x": 1410,
+                "x": 1380,
                 "y": 830
               }
             ]
@@ -305,6 +461,15 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Trust Boundary"
+                  }
+                }
+              }
+            ],
             "id": "d6ec00cf-f326-4644-bb45-39229ed4f989",
             "source": {
               "x": 1930,
@@ -334,6 +499,15 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Trust Boundary"
+                  }
+                }
+              }
+            ],
             "id": "2702dcaa-d458-4841-8704-c7cdccc0eb0e",
             "source": {
               "x": 1210,
@@ -345,8 +519,8 @@
             },
             "vertices": [
               {
-                "x": 1300,
-                "y": 860
+                "x": 1310,
+                "y": 850
               }
             ]
           },
@@ -371,6 +545,89 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a6096709-ca99-46fa-a955-745b7387269c"
+                },
+                {
+                  "group": "right",
+                  "id": "33d793ef-a3bd-4d58-8800-f2334feb6c13"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e4c729f7-14b0-4336-8ab1-f710bf3bafa5"
+                },
+                {
+                  "group": "left",
+                  "id": "cff44adb-b81d-4513-818d-d98742318ea7"
+                }
+              ]
+            },
             "id": "5228904a-1662-4fcb-883f-7836f7331c5d",
             "data": {
               "type": "tm.Process",
@@ -384,8 +641,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 11
+            }
           }
         ]
       },
