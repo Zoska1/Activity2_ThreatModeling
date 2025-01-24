@@ -133,11 +133,11 @@
               "threats": [
                 {
                   "id": "14477db5-4f20-4e3e-b98e-722661758452",
-                  "title": "New STRIDE threat",
+                  "title": "Unauthorized Access to Browser from Web App",
                   "status": "Open",
                   "severity": "TBA",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "description": "An attacker may spoof the web application to unauthorizedly access the browser client.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -146,7 +146,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
+                "spoofing": 6,
                 "repudiation": 0
               }
             }
@@ -270,97 +270,40 @@
               "threats": [
                 {
                   "id": "6d9a779c-10cd-4828-829b-fead326b30fb",
-                  "title": "New STRIDE threat",
+                  "title": "Unauthorized Access to Browser from Web App",
                   "status": "Open",
                   "severity": "TBA",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "description": "An attacker may spoof the web application to unauthorizedly access the browser client.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
                   "score": ""
+                },
+                {
+                  "id": "5f85e948-52e2-4feb-aefd-7d5e828bfcbc",
+                  "title": "Unintended Data Rejection",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "The web application could claim that it did not write data received from an entity from the other side of the trust boundary.",
+                  "mitigation": "Create a log to record the source, time, and summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 0,
+                "spoofing": 4,
+                "tampering": 4,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Trust Boundary"
-                  }
-                }
-              }
-            ],
-            "id": "12360bb4-f97d-4639-903d-3c3085997322",
-            "source": {
-              "x": 300,
-              "y": 220
-            },
-            "target": {
-              "x": 830,
-              "y": 200
-            },
-            "vertices": [
-              {
-                "x": 550,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              ""
-            ],
-            "id": "8aef0195-5c2a-49c3-a065-19706f9dad88",
-            "source": {
-              "x": 540,
-              "y": 620
-            },
-            "target": {
-              "x": 530,
-              "y": 120
-            },
-            "vertices": [
-              {
-                "x": 490,
-                "y": 340
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -455,54 +398,6 @@
               {
                 "x": 840,
                 "y": 90
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Insert Query with Feedback",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Insert Query with Feedback"
-            ],
-            "id": "1be13026-10a8-424d-8ce2-f1def8fc7f7b",
-            "source": {
-              "cell": "b64e3f40-1804-4d0d-82fe-0b4712c58a73"
-            },
-            "target": {
-              "cell": "dca58f14-8f8b-4f17-b2e6-37258fa71a1c"
-            },
-            "vertices": [
-              {
-                "x": 830,
-                "y": 480
               }
             ]
           },
@@ -645,56 +540,8 @@
             },
             "vertices": [
               {
-                "x": 430,
-                "y": 390
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Insert feedback comments",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Insert feedback comments"
-            ],
-            "id": "1525d70b-4b60-450a-9033-d29e7ac32d25",
-            "source": {
-              "cell": "212fb53d-e616-4993-9099-f7a6fc80ecc5"
-            },
-            "target": {
-              "cell": "b64e3f40-1804-4d0d-82fe-0b4712c58a73"
-            },
-            "vertices": [
-              {
                 "x": 420,
-                "y": 500
+                "y": 400
               }
             ]
           },
@@ -741,56 +588,8 @@
             },
             "vertices": [
               {
-                "x": 430,
+                "x": 410,
                 "y": 430
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Feedback comments saved",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Feedback comments saved"
-            ],
-            "id": "56792ecf-e841-4d59-b276-e578e8f9c8cd",
-            "source": {
-              "cell": "b64e3f40-1804-4d0d-82fe-0b4712c58a73"
-            },
-            "target": {
-              "cell": "212fb53d-e616-4993-9099-f7a6fc80ecc5"
-            },
-            "vertices": [
-              {
-                "x": 430,
-                "y": 470
               }
             ]
           },
@@ -843,6 +642,221 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Insert Query with Feedback",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Insert Query with Feedback"
+            ],
+            "id": "1be13026-10a8-424d-8ce2-f1def8fc7f7b",
+            "source": {
+              "cell": "b64e3f40-1804-4d0d-82fe-0b4712c58a73"
+            },
+            "target": {
+              "cell": "dca58f14-8f8b-4f17-b2e6-37258fa71a1c"
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": 480
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Trust Boundary"
+                  }
+                }
+              }
+            ],
+            "id": "12360bb4-f97d-4639-903d-3c3085997322",
+            "source": {
+              "x": 290,
+              "y": 200
+            },
+            "target": {
+              "x": 830,
+              "y": 200
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary\n"
+            ],
+            "id": "8aef0195-5c2a-49c3-a065-19706f9dad88",
+            "source": {
+              "x": 570,
+              "y": 620
+            },
+            "target": {
+              "x": 540,
+              "y": 120
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Feedback comments saved",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Feedback comments saved"
+            ],
+            "id": "56792ecf-e841-4d59-b276-e578e8f9c8cd",
+            "source": {
+              "cell": "b64e3f40-1804-4d0d-82fe-0b4712c58a73"
+            },
+            "target": {
+              "cell": "212fb53d-e616-4993-9099-f7a6fc80ecc5",
+              "port": "f95bd0a1-712d-4068-a527-a9aedf60d2ae"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Insert feedback comments",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Insert feedback comments"
+            ],
+            "id": "1525d70b-4b60-450a-9033-d29e7ac32d25",
+            "source": {
+              "cell": "212fb53d-e616-4993-9099-f7a6fc80ecc5"
+            },
+            "target": {
+              "cell": "b64e3f40-1804-4d0d-82fe-0b4712c58a73"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 500
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -850,13 +864,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              ""
+              "Trust Boundary"
             ],
             "id": "cc2b540b-1c5f-442c-9edd-f0e7ee4695ef",
             "source": {
@@ -864,12 +878,12 @@
               "y": 640
             },
             "target": {
-              "x": 900,
-              "y": 110
+              "x": 910,
+              "y": 60
             },
             "vertices": [
               {
-                "x": 850,
+                "x": 860,
                 "y": 350
               }
             ]
@@ -998,22 +1012,22 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "52ea94b7-a3ca-447b-af2a-781f4f9917ef",
-                  "title": "Spoofing",
+                  "id": "e623c9d2-aad0-438f-afa7-7ca627e08b5f",
+                  "title": "Unintended Data Rejection",
                   "status": "Open",
                   "severity": "TBA",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "type": "Repudiation",
+                  "description": "The SQL database could claim that it did not write data received from an entity from the other side of the trust boundary.",
+                  "mitigation": "Create a log to record the source, time, and summary of the received data.",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 6,
+                  "number": 8,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
-                "repudiation": 0,
+                "tampering": 0,
+                "repudiation": 4,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1144,22 +1158,48 @@
               "threats": [
                 {
                   "id": "49f1ce98-4b05-4b3a-8490-cb8cbe7f3c31",
-                  "title": "Tampering Using SQL Injection",
+                  "title": "Tampering Using LDAP Injection",
                   "status": "Open",
                   "severity": "TBA",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
+                  "description": "LDAP injection could be used since user authentication is verified using an LDAP query",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
                   "score": ""
+                },
+                {
+                  "id": "848e3401-d346-4331-9f1b-a61b1f18ef65",
+                  "title": "Unintended disclosure of data",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Improper data protection of LDAP can allow attackers to read information not intended for them.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "6d316d1e-55f5-4d77-ab5f-fed5c1cfbda4",
+                  "title": "LDAP Data Rejection",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Repudiation",
+                  "description": "LDAP could claim that it did not write data received from an entity from the other side of the trust boundary.",
+                  "mitigation": "Create a log to record the source, time, and summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 0,
+                "tampering": 2,
+                "repudiation": 2,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             }
@@ -1310,6 +1350,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 14
   }
 }
